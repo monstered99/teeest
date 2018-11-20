@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+div.banner{
+    height: 160px;
+    margin: 30px;
+}
+img.logo{
+    height: 160px;
+    width: 160px;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+a{
+    color: #EA2E49;
+    text-decoration: none;
+}
+a:hover{
+    color: #333745;
+}
+a.navitem{
+    margin: 10px;
+}
+div.navbar{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+}
+div.social{
+    height: 30px;
+}
+img.item{
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+	margin-right: auto;
+    display: block;
+}
