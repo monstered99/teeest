@@ -16,23 +16,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class = "banner">
-            <img class = "logo" src="/images/placeholder_logo.svg" alt="logo">
-        </div>
-
-        <div class = "navbar">
-            <a class = "navitem" href="#">WORK</a>
-            <a class = "navitem" href="#">ABOUT</a>
-            <a class = "navitem" href="#">CONTACT</a>
-        </div>
-        <div class = "social">
-            <a class = "item" href="#"><img class = "item" src="/icons/fill/svg/twitter.svg" alt="twitter"></a>
-            <a class = "item" href="#"><img class = "item" src="/icons/fill/svg/twitter.svg" alt="twitter"></a>
-            <a class = "item" href="#"><img class = "item" src="/icons/fill/svg/twitter.svg" alt="twitter"></a>
-        </div>
-        <div class = "content">
-
-        </div>
+        <pre id = "object"></pre>
 
         <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
         <script>
@@ -46,6 +30,14 @@
             messagingSenderId: "888978948118"
           };
           firebase.initializeApp(config);
+
+          const preObject = document.getElementById("object");
+
+          const dbRefObject = firebase.database().ref().child("object");
+
+          dbRefObject.on("value", snap => console.log(snap.val()));
+
+
         </script>
 
     </body>
